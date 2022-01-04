@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Oleo+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bubblegum+Sans&family=Voltaire&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -59,7 +59,12 @@ body{
     color: #fff;
 
 }
-
+.user .name{
+    font-family: 'Bubblegum Sans', cursive;
+}
+.user span{
+    font-family: 'Bubblegum Sans', cursive;
+}
 .header .user .post{
     font-size: 2rem;
     color: #fff;
@@ -67,6 +72,9 @@ body{
 }
 .header .navbar{
     width: 100%;
+}
+.header p{
+    font-family: 'Voltaire', sans-serif;
 }
 .header .navbar ul{
     list-style-type: none;
@@ -113,6 +121,7 @@ section{
     font-size: 2.5rem;
     color: #fff;
     
+    
 }
 .home h1{
     font-size: 5rem;
@@ -128,6 +137,7 @@ section{
     color: #eee;
     font-size: 2rem;
     font-family: 'Mate SC', serif;
+    
 }
 .btn{
     padding: 1rem 4rem;
@@ -592,7 +602,7 @@ data{
 transform: scale(1.2);
 }
 
-.name{
+.namee{
     display: flex;
     justify-content: center;
     align-items: center;
