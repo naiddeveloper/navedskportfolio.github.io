@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Oleo+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bubblegum+Sans&family=Voltaire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bubblegum+Sans&family=Signika+Negative&family=Voltaire&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -30,7 +30,9 @@ body{
     overflow-x: hidden;
     padding-left: 35rem;
 }
-
+.counter .box h3{
+    font-family: 'Signika Negative', sans-serif;
+}
 .header{
     position: fixed;
     top: 0;
@@ -168,6 +170,26 @@ span{
     color: #fff;
 
 }
+/* .about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: #6665ee;
+
+}
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.about .row .counter .box p{
+font-size: 1rem;
+margin-top: 5px;
+color: #f0f0f0;
+}
 .heading span{
     color: #6665ee;
 }
@@ -204,6 +226,18 @@ span{
     align-items: center;
     flex-wrap: wrap;
 
+}
+.about .row .counter .box {
+    width: 31rem;
+    background-color: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .education .box-container{
     display: flex;
@@ -378,6 +412,22 @@ span{
 }
 .progress-line.javascript span::after{
     content: '65%';
+    position: absolute;
+    top: -35px;
+   height: 15px;
+   width: 20px;
+   right: 0;
+   background: #6665ee;
+   color: #fff;
+   font-size: 12px;
+   font-weight: 600;
+   padding: 1px 8px;
+   border-radius: 3px;
+    
+
+}
+.progress-line.bootstrap span::after{
+    content: '80%';
     position: absolute;
     top: -35px;
    height: 15px;
@@ -610,8 +660,11 @@ transform: scale(1.2);
     margin-bottom: 10px;
     color: #eee;
 }
-.name p{
+.namee p{
+    font-size: 1rem;
+    font-weight: bolder;
     margin: 10px 10px;
+
 }
 
 /* media Query */
@@ -642,8 +695,20 @@ transform: scale(1.2);
     html{
         font-size: 50%;
     }
+    .about .row .counter .box{
+        width: 100%;
+    }
 }
 @media (max-width : 400px){
+    .about .row .info {
+        /* flex: 1 1 48rem; */
+        /* padding: 2rem 1rem; */
+        /* padding-left: 6rem; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
     .header{
         width: 100wv;
     }
@@ -697,5 +762,8 @@ transform: scale(1.2);
         font-size: 2.5rem;
         color: #fff;
         margin-bottom: 5px;
+    }
+    .about .row .counter .box{
+        width: 100%;
     }
 }
