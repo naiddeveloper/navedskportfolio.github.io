@@ -46,6 +46,7 @@ body{
     align-items: center;
     flex-flow: column;
     text-align: center;
+    height : 810px;
 }
 .header .user img{
     height: 17rem;
