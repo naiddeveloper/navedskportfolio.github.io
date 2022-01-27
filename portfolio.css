@@ -54,7 +54,7 @@ body{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .7rem solid #6665ee;
+    border: .7rem solid #fff;
 
 }
 .header .user .name{
